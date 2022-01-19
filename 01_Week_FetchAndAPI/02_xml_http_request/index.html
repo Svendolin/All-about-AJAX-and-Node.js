@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-------------------------------------- BASIC HTML5 TAG -------------------------------------->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------------------------------------- META TAG -------------------------------------->
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="Useful Basic Structure for HTML stuff in the head">
+  <meta name="author" content="Svendolin">
+  <title>XML HTTP REQUEST</title>
+</head>
+
+<body>
+  <script>
+    // new = Instant eines Objekts, in diesem Falle von xhttp
+
+    const xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function () { // Damit ich als Client einen Code vom Server erhalten werde
+      if (this.readyState == 4 && this.status == 200) { // this = onreadystatechange | 4 = Request finished // 200 = Repsonse OK
+        console.log(JSON.parse(this.responseText))
+      }
+    }
+
+    // Methode:
+    xhttp.open('GET', '../00_data/data.json'); // Als Einstellung GET-Request - Dateipfad sonst üblich, z.B Serverpfad statt foo.json
+    xhttp.send()
+  </script>
+  <span>Check the console. It should show the data.json API from 00_data</span>
+
+</body>
+
+</html>

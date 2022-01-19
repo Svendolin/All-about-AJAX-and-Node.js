@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-------------------------------------- BASIC HTML5 TAG -------------------------------------->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------------------------------------- META TAG -------------------------------------->
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="Useful Basic Structure for HTML stuff in the head">
+  <meta name="author" content="Svendolin">
+  <title>API fetch with JQUERY using JSON</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      width: 700px;
+      margin: 3rem auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+    }
+
+    .card {
+      border: solid 1px black;
+      border-radius: 6px;
+      padding: 1rem;
+      background: red;
+    }
+
+
+    .card.completed { 
+      background: green;
+    }
+
+    .card ul {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1> TODO -List </h1>
+  <main class="container"></main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+
+
+
+    // JQuery-Ajax Element NOCH-Einfachere Version:
+    // $.getJSON('../00_data/data.json', function (result) {
+    //   console.log(result);
+    // })
+
+
+
+    $.getJSON('https://jsonplaceholder.typicode.com/todos', function (data) {  // Die 10 User aus der AIP laden
+      console.log(data)
+
+      $.each(data, function (i, todo) {
+        console.log(i);
+        if (i < 10) {
+          let template 
+          if (todo.completed) {
+             template = `  
+      <div class="card completed">
+        <ul>
+          <li>userId: ${todo.userId}</li>
+          <li>id: ${todo.id}</li>
+          <li>title: ${todo.title}</li>
+          <li>completed: ${todo.completed}</li>
+          <li></li>
+        </ul>
+      </div>
+  `
+          }
+          else {
+             template = `  
+      <div class="card">
+        <ul>
+          <li>userId: ${todo.userId}</li>
+          <li>id: ${todo.id}</li>
+          <li>title: ${todo.title}</li>
+          <li>completed: ${todo.completed}</li>
+          <li></li>
+        </ul>
+      </div>
+  `
+          }
+
+          $('.container').append(template)
+        }
+
+      });
+    });
+
+  </script>
+</body>
+
+</html>

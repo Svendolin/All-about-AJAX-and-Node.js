@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-------------------------------------- BASIC HTML5 TAG -------------------------------------->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------------------------------------- META TAG -------------------------------------->
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="Useful Basic Structure for HTML stuff in the head">
+  <meta name="author" content="Svendolin">
+  <title>fetch with ASYNC</title>
+</head>
+
+<body>
+  <script>
+    // async vor die Funktion setzen, damit sie asynchron läuft:
+    async function displayData() {
+      let response = await fetch('../00_data/data.json'); // await ist equivalent zu .then / .then
+      let data = await response.json();
+
+      console.log(data);
+    }
+
+    // Am Ende nicht vergessen: Funktion ausgeben!
+    displayData()
+  </script>
+<span>Check the console. It should show the data.json API from 00_data</span>
+
+</body>
+
+</html>

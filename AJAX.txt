@@ -1,0 +1,24 @@
+AJAX = Asynchronous* Javascript and XML# 
+
+Bedeutet:
+*Asynchrone Request(Fetch = Vanilla, JQuery Ajax = JQuery, etc) und Responses
+#Veraltet, funktioniert eigentlich wie HTML. Durch Json (Textversion von JS) Einführung damals ist 
+
+Gebraucht für:
+=> Content inserten von einer Database / Server (localhost z.B.), ohne die Webseite jedes mal zu refreshen
+=> Inhalt von Zeit zu Zeit in eine Webseite laden. (Beispiel dazu: Chatbots = Refresh geschieht automatisch)
+=> Webpage Inhalte bei einem Klick auf einen Button laden (z.B. "Mehr Anzeigen" in einem Webshop)
+
+Wird kombiniert mit:
+=> Javascript oder JQuery
+
+Jeder Browser hat seine eigene JS-Engine:
+=> Engine: Die Maschine, die Javascript im Browser ausführt, in Chrome z.B "V8"
+
+Stack Functions:
+=> Jede Funktion wird step by step gestacked (gestapelt). Javascript geht step by step alle durch von der ersten Funktion
+zur nächsten. 
+JS ist single threaded = Es gibt nur einen Stack / 
+Never-Blocking = Es wird ständig step by step durchgeloopt /
+Asynchronal = Wir müssen warten, bis der Prozess ausgeführt wird. Das ist je nach Inhalt unterschiedlich!
+(Mit Ajax können wir nebensächlich TROTZDEM arbeiten, Anfragen machen...)
