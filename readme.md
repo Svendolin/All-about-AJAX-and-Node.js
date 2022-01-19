@@ -2,7 +2,7 @@
 
 
 ***
-<!-- <img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/ccc16358ac4530c6a69b1b80c7223cd2744dea83/topics/ajax/ajax.png" />  -->
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/ajax/ajax.png" /> 
 
 # &nbsp; - ALL ABOUT AJAX and Node.js - ✔
 
@@ -26,8 +26,8 @@ What is AJAX ?
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| Week&nbsp;01 | Test `Test` |
-| Week&nbsp;02 | Test `Test`  |
+| Week&nbsp;01 | XML HTTP Request // FETCH with: `.then` or `ASYNC` or `JQUERY` // API FETCH with: `ASYNC` or `JQUERY` |
+| Week&nbsp;02 | PHP AJAX SIMPLE, CONTACT FORM and LOGIN //  |
 
 
 
