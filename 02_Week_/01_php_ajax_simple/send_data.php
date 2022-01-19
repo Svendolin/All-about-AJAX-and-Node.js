@@ -1,6 +1,7 @@
 <?php
 
 // Wir senden diesen text. Server erstellt String
-echo 'Sending Data';
+$name = 'Sven';
+echo "Hello " . $name . ", Your request has been sent";
 
 ?>

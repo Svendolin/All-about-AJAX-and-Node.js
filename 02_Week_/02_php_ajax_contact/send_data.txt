@@ -1,1 +1,0 @@
-Sending data! (We use the txt-file because this is not our localhost with apache-server)
