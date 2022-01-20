@@ -1,8 +1,149 @@
 /* === Small CSS Reset === */
-/* *{
+*{
   margin: 0;
   padding: 0;
 }
 *, *::after, *::before{
   box-sizing: border-box;
-} */
+}
+
+div.logo {
+  display: flex;
+  justify-content: center ;
+}
+
+img {
+  max-width: 300px;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+h2 {
+  margin: 30px 0 20px 0;
+  font-size: 18px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.gameseries {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem;
+  border-radius: 6px;
+  border-left: 3px solid #ffac00;
+  border-top: 3px solid #008862;
+  border-right: 3px solid #e90080;
+  border-bottom: 3px solid black;
+}
+
+.gameseries > li {
+  border-radius: 6px;
+  padding: 1rem;
+  min-height: 30px;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px #aaaaaa;
+  border: 1px solid #aaaaaa;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  list-style: none;
+}
+
+.gameseries > li:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  
+}
+
+.amiibos {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem;
+  border-radius: 6px;
+  border-left: 3px solid #9ec900;
+  border-top: 3px solid #ff0019;
+  border-right: 3px solid #00acee;
+  border-bottom: 3px solid black;
+  list-style: none;
+}
+
+figure {
+  background: black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.figurepic {
+  padding: 10px 10px;
+  overflow: hidden;
+  height: 350px;
+
+}
+
+.img {
+  width: 100%;
+}
+
+.amiibos li {
+  display: block;
+  list-style: none;
+  font-family: 'Carter One', cursive;
+  font-weight: 500;
+  font-size: 13px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.amiibos li.name {
+  background: #ff0019;
+}
+
+.amiibos li.game {
+  background: #9ec900;
+}
+
+.amiibos li.series {
+  background: #00acee;
+}
+
+.amiibos li.type {
+  background: #ffac00;
+}
+
+
+@media all and (max-width: 1100px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
+

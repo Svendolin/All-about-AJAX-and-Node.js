@@ -14,7 +14,7 @@ async function getData() {
 }
 
 
-function showGames (data) {
+function showGames(data) {
   const names = []
   data.amiibo.forEach(game => {
     names.push(game.name) // push() = an einer array ganz am ENDE HINZUFÜGEN
@@ -26,12 +26,12 @@ function showGames (data) {
   const uniqueNames = [...new Set(names)]
   // A) Durch alle Namen gehen bei jedem Spiel:
   uniqueNames.forEach(gameName => {
-  // B) Liste <li> kreieren
-  const li = document.createElement('li')
-  // C) Der aktuelle Gamenamen zu der <li> als Inhalt hinzufügen
-  li.innerText = gameName
-  // D) Die jetzige <li> muss an der <ul> im HTML angehängt werden (appended)
-  document.querySelector('.gameseries').appendChild(li)
+    // B) Liste <li> kreieren
+    const li = document.createElement('li')
+    // C) Der aktuelle Gamenamen zu der <li> als Inhalt hinzufügen
+    li.innerText = gameName
+    // D) Die jetzige <li> muss an der <ul> im HTML angehängt werden (appended)
+    document.querySelector('.gameseries').appendChild(li)
   })
 
   getAmiibos() // Funktion bereits hier callen, um es hier zu inizialisieren...
@@ -49,6 +49,38 @@ function getAmiibos() {
       const response = await fetch(`https://www.amiiboapi.com/api/amiibo/?gameseries=${item.innerText}`)
       const data = await response.json()
       console.log(data)
+      showAmiibos(data)
     })
+  })
+}
+
+function showAmiibos(data) {
+  document.querySelector('.amiibos').innerHTML = ''
+  data.amiibo.forEach(amiibo => {
+
+
+    const div = document.createElement('div');
+
+    // Tip: Im HTML machen und dann hier reinkopieren, um keinen Fehler zu machen!
+    const template = `
+    <figure>
+    <div class="figurepic">
+      <img class="img" src="${amiibo.image}" alt="${amiibo.character}">
+    </div>
+    <figcaption>
+      <ul>
+        <li class="name">Name:<br> ${amiibo.character}</li>
+        <li class="game">Game:<br> ${amiibo.gameSeries} </li>
+        <li class="series">Amiibo Series:<br> ${amiibo.amiiboSeries} </li>
+        <li class="type">Amiibo Type:<br> ${amiibo.type} </li>
+      </ul>
+    </figcaption>
+  </figure>
+    
+    `
+    // Hier innerHTML da wird das obige mit den <> interprätieren wollen
+    div.innerHTML = template
+
+    document.querySelector('.amiibos').appendChild(div)
   })
 }
