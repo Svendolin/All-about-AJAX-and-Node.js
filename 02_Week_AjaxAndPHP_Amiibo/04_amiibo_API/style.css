@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+body {
+  border: 10px solid black;
+  margin: 10px;
+  border-radius: 8px;
+}
+
 div.logo {
   display: flex;
   justify-content: center ;
@@ -36,6 +42,7 @@ h1, h2 {
   gap: 2rem;
 }
 
+/* Game selcection Area */
 .gameseries {
   max-width: 600px;
   margin: 0 auto;
@@ -45,10 +52,12 @@ h1, h2 {
   list-style: none;
   padding: 2rem;
   border-radius: 6px;
-  border-left: 3px solid #ffac00;
-  border-top: 3px solid #008862;
-  border-right: 3px solid #e90080;
-  border-bottom: 3px solid black;
+  border-left: 6px solid #9ec900;
+  border-top: 6px solid #ff0019;
+  border-right: 6px solid #00acee;
+  border-bottom: 6px solid black;
+  margin-bottom: 40px;
+  
 }
 
 .gameseries > li {
@@ -70,8 +79,9 @@ h1, h2 {
   background: white;
   color: black;
   cursor: pointer;
-  
 }
+
+/* Display Area */
 
 .amiibos {
   max-width: 600px;
@@ -82,11 +92,12 @@ h1, h2 {
   list-style: none;
   padding: 2rem;
   border-radius: 6px;
-  border-left: 3px solid #9ec900;
-  border-top: 3px solid #ff0019;
-  border-right: 3px solid #00acee;
-  border-bottom: 3px solid black;
+  border-left: 6px solid #ffac00;
+  border-top: 6px solid #008862;
+  border-right: 6px solid #e90080;
+  border-bottom: 6px solid black;
   list-style: none;
+  margin-bottom: 40px;
 }
 
 figure {
@@ -138,10 +149,13 @@ figure {
 }
 
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1300px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(1,1fr);
+  }
+  .amiibos {
+    margin-bottom: 40px;
   }
 }
 
