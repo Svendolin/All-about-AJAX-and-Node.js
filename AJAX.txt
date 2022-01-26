@@ -22,3 +22,40 @@ JS ist single threaded = Es gibt nur einen Stack /
 Never-Blocking = Es wird ständig step by step durchgeloopt /
 Asynchronal = Wir müssen warten, bis der Prozess ausgeführt wird. Das ist je nach Inhalt unterschiedlich!
 (Mit Ajax können wir nebensächlich TROTZDEM arbeiten, Anfragen machen...)
+
+
+[Node.JS]
+
+1) Bash öffnen
+2) $ node --version
+3) Version sollte angezeigt werden
+4) $ npm --version
+5) Version von NODE PACKAGE MANAGER sollte angezeigt werden
+
+Node.js hat keinen Zugriff auf den DOM, weil es kein Client gibt (Kein Document, das gebaut wird)
+Node.js ist Javascript, dass eben serverseitig auf dem SERVER ausgeführt wird
+
+How to start:
+
+1) Beim passenden Ordner, demfall 01_node-server > Rechtsklick > Open in integrated terminal
+2) Pfad MUSS richtig sein. Bitte überprüfen!
+2.1) $ pwd zeigt der Pfad an (pwd = path working directory)
+3) Falls FALSCH: "$ ls" > "$ cd" TAB (soviel TAB bis zum ENDPFFAD, oder manuell erste Zeichen eingeben, mit TAB abschliessen) > Enter
+3.1) Falls KOMPLETT FALSCHER PFAD: $ cd ../bla bla
+4) "$ node" und Name des JS-files, z.B server.js und ausführen: "$ node server.js"
+
+How to finish:
+Port immer beenden wenn neues werk ctrl c
+WARUM WICHTIG? Wenn wir Änderungen anzeigen wollen, muss der Server immer neu gestartet werden (ist kein Liveserver)
+
+Was bedeutet hier SERVERSEITIG?
+- Wir tauschen die Rollen. Wenn wir SERVERSEITIG arbeiten, dann befinden wir uns im Server drin:
+- Wir erstellen und starten den Server (server.js file) und Empfangen Anfragen
+- Das heisst WIR sind nun die Kellner (server) und nicht der Kunde (client). Wir BEDIENEN den client
+
+[Express.js]
+
+1) In terminal: Richtiger Pfad wo gewünscht: "$ npm i express" um package reinzuladen
+2) Bei erfolgreicher Beendung werden zusätzliche Ordner in diesen Pfad gelegt (Abhängikeitsordner)
+
+GET REQ finden in der URL statt FACT
