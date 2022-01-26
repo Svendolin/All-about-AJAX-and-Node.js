@@ -4,15 +4,12 @@
 ***
 <img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/ajax/ajax.png" /> 
 
-# &nbsp; - ALL ABOUT AJAX and Node.js - ✔
+# &nbsp;- ALL ABOUT AJAX and Node.js - ✔
 
 This "All about AJAX and Node.js"-repository catches up its focus on all the AJAX and Node.js processes I've made, commented and written through the years as a **SAE-Web Development** student with exercise lessons every week as well as tutorial videos on _Youtube_.
         
 Direct Link to the place where I'm studying are you going to find [HERE](https://www.sae.edu/che/de?utm_source=PS01&gclid=Cj0KCQjw-4SLBhCVARIsACrhWLVIaD_aUt7y4brT7tqMW9o7tskgb1vjQqJFkzQwkwdN_40_Ls7MgAEaAtXxEALw_wcB)
 
-
-What is AJAX ?
-* TEST
 
 ⚫🔴🟡 IMPORTANT: Comments in each file are commented in german⚫🔴🟡
 <br />
@@ -27,7 +24,8 @@ What is AJAX ?
 | Topic | Content  | 
 |:--------------| :--------------|
 | Week&nbsp;01 | XML HTTP Request // FETCH with: `.then` or `ASYNC` or `JQUERY` // API FETCH with: `ASYNC` or `JQUERY` |
-| Week&nbsp;02 | PHP AJAX SIMPLE, CONTACT FORM and LOGIN //  |
+| Week&nbsp;02 | PHP AJAX SIMPLE, CONTACT FORM and LOGIN // Amiibo API |
+| Week&nbsp;03 |  |
 
 
 
@@ -42,7 +40,8 @@ What is AJAX ?
 ***
 
 INSTALLISATION:
-* test
+* https://cdnjs.com/libraries/jquery (if you would like to use JQUERY in your project)
+* XAMPP or MAMP if you want to combine AJAX with PHP to work with apache servers
 <br />
 <br />
 
@@ -58,6 +57,39 @@ USEFUL STEPS:
 ***
 ## AJAX and Node.js - Useful Assistance ✅
 ***
+``AJAX`` = Asynchronous* Javascript and XML 
+
+_**Means:**_
+
+*Asynchronous Request (Fetch = Vanilla, JQuery Ajax = JQuery, etc) and Responses.
+XML = Obsolete, actually works like HTML. Through Json (text version of JS).
+
+_**Used for:**_
+
+ * Injecting content from a database / server (localhost e.g.) without refreshing the website every time.
+
+ * Loading content into a web page from time to time. (Example: chatbots = refresh happens automatically)
+
+ * Load webpage content when a button is clicked (e.g. "Show more" in a webshop).
+
+_**Combined with:**_
+
+ * Javascript or JQuery
+
+_**Each browser has its own JS engine:**_
+
+ * Engine: The engine that executes Javascript in the browser, in Chrome e.g. "V8".
+
+_**AJAX IS: Stack Functionable / Single threaded / Never blocking / Asynchronous:**_
+ * Each function is stacked (stacked) step by step = Javascript goes step by step through them all from the first function to the next.
+to the next. 
+
+* JS is single threaded = There is only one stack
+
+* Never-Blocking = It is constantly looped through step by step
+
+* Asynchronous = We have to wait until the process is executed. This varies depending on the content!
+(With Ajax we can work side by side, making requests while processes are happening).
 
 
 <br />
