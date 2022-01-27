@@ -25,7 +25,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 |:--------------| :--------------|
 | Week&nbsp;01 |  XML HTTP Request (_01 , 02_) // FETCH with: `.then` or `ASYNC` or `JQUERY` (_03 , 04 , 05_)  // API FETCH with: `ASYNC` or `JQUERY` (_06 , 07 , 08_)  |
 | Week&nbsp;02 | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) |
-| Week&nbsp;03 | Node.js => Node Server, Express Server (_01 , 02_) // Express Server (_02_) |
+| Week&nbsp;03 | Node.js => `Node Server`, `Express Server` (_01 , 02_) // More Express with `ROUTING` (_03-01_),  `MIDDLEWARE` (_03-02_), `EJS`-Template Engine + `Nodemon` (_03-03_) |
 
 
 
@@ -43,14 +43,23 @@ JQUERY - INSTALLISATION:
 * https://cdnjs.com/libraries/jquery (if you would like to use JQUERY in your project)
 * XAMPP or MAMP if you want to combine AJAX with PHP to work with apache servers
 <br />
+
+Node.js - INSTALLISATION:
+* https://nodejs.org/en/ (Recommend LTS for an unbuggy / non-risky experience)
 <br />
 
-USEFUL STEPS:
+Express.js - INSTALLISATION:
+* https://expressjs.com/ (Home is where to start, --save is not urgently needed in your Terminal)
+<br />
 
-1. --
+Express.js TEMPLATES (PUG, MUSTACHE, EJS) - INSTALLISATION:
+* https://expressjs.com/en/guide/using-template-engines.html (Overview)
+* https://www.npmjs.com/package/ejs (EJS)
+<br />
 
-
-
+NODEMON - INSTALLISATION:
+* https://www.npmjs.com/package/nodemon 
+* (Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected).
 <br />
 <br />
 
@@ -99,7 +108,9 @@ to the next.
 
 
 ***
-## Node.js - Useful Assistance ✅
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
+
+## &nbsp;Node.js - Useful Assistance ✅
 ***
 ``AJAX`` = Asynchronous* Javascript and XML 
 

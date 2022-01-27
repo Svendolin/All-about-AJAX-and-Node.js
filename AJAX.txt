@@ -28,7 +28,7 @@ Asynchronal = Wir müssen warten, bis der Prozess ausgeführt wird. Das ist je n
 Was bedeutet hier SERVERSEITIG?
 - Wir tauschen die Rollen. Wenn wir SERVERSEITIG arbeiten, dann befinden wir uns im Server drin:
 - Wir erstellen und starten den Server (server.js file) und Empfangen Anfragen
-- Das heisst WIR sind nun die Kellner (server) und nicht der Kunde (client). Wir BEDIENEN den client
+- Das heisst WIR sind nun die Kellner (server) und nicht der Kunde (client). Wir BEDIENEN den client!
 
 1) Bash öffnen
 2) $ node --version
@@ -75,7 +75,7 @@ WARUM WICHTIG? Wenn wir Änderungen anzeigen wollen, muss der Server immer neu g
 1) .ejs-files (z.B. index.ejs) in einen "views"-Ornder packen. Dieser Name MUSS 1:1 so geschrieben sein
 2) inkludierte .ejs-files (wie wir es im PHP kennen) in einen "partials"-Ordner packen (z.B. footer.ejs)
 3) Extension "EJS Language Support" herunerladen, damit VSC EJS lesen kann
-3) Mit <%= %> asnprechen
+3) Mit <%= %> ansprechen
 
 BEST OF TERMINAL BEFEHLE (Öffnen in VSC mit ctrl + J):
 $ node --version
