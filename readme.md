@@ -22,20 +22,14 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 ## Folder Directory
 ***
 
-
 | Topic | Content  | 
 |:--------------| :--------------|
 | Week&nbsp;01 |  XML HTTP Request (_01 , 02_) // FETCH with: `.then` or `ASYNC` or `JQUERY` (_03 , 04 , 05_)  // API FETCH with: `ASYNC` or `JQUERY` (_06 , 07 , 08_)  |
 | Week&nbsp;02 | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) |
 | Week&nbsp;03 | Node.js => `Node Server`, `Express Server` (_01 , 02_) // More Express with `ROUTING` (_03-01_),  `MIDDLEWARE` (_03-02_), `EJS`-Template Engine + `Nodemon` (_03-03_) |
 
-
-
-
 <br />
 <br />
-
-
 
 ***
 ## Technologies and Installation ✅
@@ -114,7 +108,7 @@ to the next.
 
 ## &nbsp;Node.js - Useful Assistance ✅
 ***
-What does ""SERVERSEITIG" mean here?
+What does "SERVERSEITIG" mean here?
 - We swap the roles. When we work SERVERSEITIG, we are "inside the server".
 - We create and start the server (server.js file) and receive requests.
 - That means WE are now the waiters (server) and not the client. We OPERATE the client!
@@ -187,17 +181,17 @@ _**[EJS - The Template Engine enables you to use static template files in your a
 
 | COMMAND | EFFECT  | 
 |:--------------| :--------------|
-| $ node --version | ... |
-| $ npm --version | ... |
-| $ pwd | ... |
-| $ ls | ... |
-| $ cd /TAB (TAB as Autocomplete) | ... |
-| $ cd ../ | ... |
-| $ node (...) | ... |
-| $ nodemon (...)  | ... |
-| $ npm install -g nodemon  | ... |
-| $ npm i express  | ... |
-| $ npm install ejs  | ... |
+| $ node --version | Checks the node.js version (None if you havent installed it) |
+| $ npm --version | Checks the NPM Version (Node Package Manager) |
+| $ pwd | Print Work Directory (checks your path) |
+| $ ls | Show Contents of a Directory |
+| $ cd /TAB (TAB as Autocomplete) | Navigate through Content Directory |
+| $ cd ../ | A step back of the Content Directory |
+| $ node (...) | Using NODE to start the serverside workingspace |
+| $ nodemon (...)  | Using NODEMON to start the serverside workingspace |
+| $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
+| $ npm i express  | Install Express (You can also write "install", "i" is shortcut) |
+| $ npm i ejs  | ... |
 
 
 <br />

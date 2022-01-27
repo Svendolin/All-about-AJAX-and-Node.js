@@ -23,6 +23,7 @@ app.get('/', (req, res) => {  // '/' = root
       message: message
   }) 
 }) 
+
 /*
 IMPORTANT NOTE: 
 "views"-Ordner erstellen, der MUSS so heissen um ejs-Files darstellen zu können ! (Siehe expressjs.com Seite)

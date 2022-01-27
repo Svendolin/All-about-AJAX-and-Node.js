@@ -87,3 +87,15 @@ $ cd ../
 $ node 
 $ nodemon (nach der Installation via => "$ npm install -g nodemon")
 $ npm install ejs (Template Engine wie PUG und Mustache)
+
+NEU 
+$ npm init am ANFANG (Nicht nötig, aber sicher sein, dass es klappt - Nodemoduls müssen gut eingereichtet sein)
+Da stellt man alles ein, mit enter akzeptieren (package name, version, Beschreibung, Startdatei und und und)
+In der darauffolgenden Erstellung von package.json kann man immer noch was ändbern
+
+$ npm i request (! VERALTET)
+
+Fetch ist CLIENTSEITIG, deshalb um APIs Serverseitig zu laden brauchen wir Pakete wie Acsion / Node fetch
+User soll Stzadt eingeben > Send > Server soll Statdt wissen und API Request an API Weather schicken
+
+Public = Statischer Ordner mit Sachen für den Clientseitigen Gebrauch, wie CSS
