@@ -23,9 +23,9 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| Week&nbsp;01 | XML HTTP Request // FETCH with: `.then` or `ASYNC` or `JQUERY` // API FETCH with: `ASYNC` or `JQUERY` |
-| Week&nbsp;02 | PHP AJAX SIMPLE, CONTACT FORM and LOGIN // Amiibo API |
-| Week&nbsp;03 |  |
+| Week&nbsp;01 |  XML HTTP Request (_01 , 02_) // FETCH with: `.then` or `ASYNC` or `JQUERY` (_03 , 04 , 05_)  // API FETCH with: `ASYNC` or `JQUERY` (_06 , 07 , 08_)  |
+| Week&nbsp;02 | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) |
+| Week&nbsp;03 | Node.js => Node Server, Express Server (_01 , 02_) // Express Server (_02_) |
 
 
 
@@ -39,7 +39,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 ## Technologies and Installisation ✅
 ***
 
-INSTALLISATION:
+JQUERY - INSTALLISATION:
 * https://cdnjs.com/libraries/jquery (if you would like to use JQUERY in your project)
 * XAMPP or MAMP if you want to combine AJAX with PHP to work with apache servers
 <br />
@@ -55,7 +55,9 @@ USEFUL STEPS:
 <br />
 
 ***
-## AJAX and Node.js - Useful Assistance ✅
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/ajax/ajax.png" /> 
+
+## &nbsp;AJAX - Useful Assistance ✅
 ***
 ``AJAX`` = Asynchronous* Javascript and XML 
 
@@ -90,6 +92,18 @@ to the next.
 
 * Asynchronous = We have to wait until the process is executed. This varies depending on the content!
 (With Ajax we can work side by side, making requests while processes are happening).
+
+
+<br />
+<br />
+
+
+***
+## Node.js - Useful Assistance ✅
+***
+``AJAX`` = Asynchronous* Javascript and XML 
+
+
 
 
 <br />
