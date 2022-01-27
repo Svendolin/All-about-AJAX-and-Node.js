@@ -36,28 +36,28 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 
 ***
-## Technologies and Installisation ✅
+## Technologies and Installation ✅
 ***
 
-JQUERY - INSTALLISATION:
+JQUERY - INSTALLATION:
 * https://cdnjs.com/libraries/jquery (if you would like to use JQUERY in your project)
 * XAMPP or MAMP if you want to combine AJAX with PHP to work with apache servers
 <br />
 
-Node.js - INSTALLISATION:
+Node.js - INSTALLATION:
 * https://nodejs.org/en/ (Recommend LTS for an unbuggy / non-risky experience)
 <br />
 
-Express.js - INSTALLISATION:
+Express.js - INSTALLATION:
 * https://expressjs.com/ (Home is where to start, --save is not urgently needed in your Terminal)
 <br />
 
-Express.js TEMPLATES (PUG, MUSTACHE, EJS) - INSTALLISATION:
+Express.js TEMPLATES (PUG, MUSTACHE, EJS) - INSTALLATION:
 * https://expressjs.com/en/guide/using-template-engines.html (Overview)
 * https://www.npmjs.com/package/ejs (EJS)
 <br />
 
-NODEMON - INSTALLISATION:
+NODEMON - INSTALLATION:
 * https://www.npmjs.com/package/nodemon 
 * (Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected).
 <br />
@@ -112,13 +112,95 @@ to the next.
 
 ## &nbsp;Node.js - Useful Assistance ✅
 ***
-``AJAX`` = Asynchronous* Javascript and XML 
+What does ""SERVERSEITIG" mean here?
+- We swap the roles. When we work SERVERSEITIG, we are "inside the server".
+- We create and start the server (server.js file) and receive requests.
+- That means WE are now the waiters (server) and not the client. We OPERATE the client!
+- Node.js has no access to the DOM because there is no client (no document being built)
+- Node.js is Javascript that is executed server-side on the SERVER.
+
+_**GET STARTED:**_
+
+1) Open Bash (Windows) and write in your terminal:
+2) $ node --version
+3) Version should be displayed (Successful Installation)
+4) $ npm --version
+5) Version of NODE PACKAGE MANAGER should be displayed too (Successful Installation)
+
+_**OPEN TERMINAL, CHECK THE RIGHT PATH AND EXECUTE THE SERVER:**_
+
+6) Look at the appropriate folder in VSC, for example: "01_node-server" > right click > "Open in integrated terminal"
+7) Path MUST be correct. Please check with: `$ pwd` , which shows the path (pwd = path working directory) <br />
+7.1) If FALSE: `$ ls` (gives information about the path tree), then:<br />
+7.2) `$ cd` and TAB through the path (TIP: manually enter first characters, end with TAB, which is like an AUTOCOMPLETE) > Enter <br />
+7.3) If COMPLETELY WRONG PATH: `$ cd ../bla bla`
+8) `$ node` and name of JS-file, for example "server.js" and execute: `$ node server.js`.
 
 
+_**Why restart the server after EVERY CHANGE?**_
+
+* ctrl c in the terminal STOPS THE SERVER RUNNING - the server must always be restarted (it is not a live server).
+
+
+_**Why is NODEMON as a SUPERFAST SOLUTION?**_
+1) Nodemon starts the server automatically with every change. (ctrl c is kinda superfluous now)
+2) Write `$ npm install -g nodemon` in your terminal to run NODEMON
+3) At first start do NOT write `$ node` but `$ nodemon (*)` to address Nodemon like: (`$ nodemon 03_ejs_basics.js`)
+4) The update applies ONLY to the corresponding (*)-JS file, for example "03_ejs_basics.js" THAT MEANS: If you do changes on an involved .ejs file or other files, always go back to your JS-File and safe it with ctrl + s
+5) (Server can still be stopped with ctrl c if desired).
+6) `Ctrl enter` on the port to open it directly in the Google Chrome browser (Important: Port must be initialized as in the example of "03_ejs_basics.js")
+
+<br />
+<br />
+
+***
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" />
+
+## &nbsp;Expressjs and EJS - Useful Assistance ✅
+***
+
+_**[Expressjs = Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web ]**_
+1) In terminal: `$ npm i express` to load package
+2) On successful completion, additional folders are placed in this path (dependency folders)
+
+_**[EJS - The Template Engine enables you to use static template files in your application]**_
+
+1) In terminal: `$ npm install ejs`
+2) Index.html was yesterday, write "index.ejs" for example and add your HTML there
+3) Put .ejs-files (like "index.ejs") into a "views"-folder. The name HAS TO BE "VIEWS"
+4) Put included .ejs-files (as we know it in PHP) into a "partials"-folder (for ecample "footer.ejs")
+5) Download the extension "EJS Language Support" so that VSC can read EJS. <br />
+      *  INCLUDE with `<%- %>` for example: `<%- include('partials/footer') %>`
+      *  ECHO with `<%= %>` for example: `<h2><%= message  %></h2>`
+      *  CONTROL FLOW (like "for each") with `<% %>` for example: `<% students.forEach(student => {  %>` bla bla `<% }) %>`
+
+<br />
+<br />
+
+***
+<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/d92924b1d925bb134e308bd29c9de6c302ed3beb/topics/terminal/terminal.png" />
+
+## &nbsp;TERMINAL COMMANDS I USED HERE ✅
+***
+
+| COMMAND | EFFECT  | 
+|:--------------| :--------------|
+| $ node --version | ... |
+| $ npm --version | ... |
+| $ pwd | ... |
+| $ ls | ... |
+| $ cd /TAB (TAB as Autocomplete) | ... |
+| $ cd ../ | ... |
+| $ node (...) | ... |
+| $ nodemon (...)  | ... |
+| $ npm install -g nodemon  | ... |
+| $ npm i express  | ... |
+| $ npm install ejs  | ... |
 
 
 <br />
 <br />
+
 
 ***
 ## Collaboration ✅
