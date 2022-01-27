@@ -1,0 +1,78 @@
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input[type="text"] {
+  display: block;
+  font-weight: 300;
+  font-size: 2rem;
+  border: 0;
+  outline: none;
+  width: 100%;
+  color: #333;
+  background: #fff;
+  padding: 10px 15px;
+  margin: 30px auto;
+  transition: all 0.1s ease-in-out;
+  border-bottom: 1px solid #ddd;
+  max-width: 390px;
+  min-width: 35px;
+}
+
+input[type="submit"]:hover {
+  background: grey;
+  color: white;
+}
+
+input[type="text"]:focus {
+  background: darkslategray;
+  color: #fff;
+}
+
+input[type="text"]:focus::placeholder {
+  color: #fff;
+  text-align: center;
+  
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: 2px solid darkgrey;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 390px;
+  min-width: 350px;
+  transition: all 0.1s ease-in-out;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.display {
+  font-size: 3rem;
+  margin: 2rem auto;
+  color: #555;
+}
+
+.icon {
+  max-width: 190px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

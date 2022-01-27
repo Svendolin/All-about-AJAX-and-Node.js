@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App 920</title>
+  <link rel="stylesheet" href="/css/style.css"> <!-- Public Ordner existiert nur serverseitig -->
+</head>
+<body>
+  <div class="container">
+    <form action="/" method="post">
+      <input type="text" name="city" id="city" placeholder="Enter a city" required>
+      <input type="submit" value="submit">
+    </form>
+    <!-- Falls das NICHT NULL ist, rendern... -->
+    <% if (data != null) { %> <!-- data wird das eine Hauptobjekt sein und .rest die Unterobjekte -->
+      <div class="display">It is <%= data.temp %> Celsius in <%= data.city %> </div>
+      <!-- Aus: https://openweathermap.org/weather-conditions -->
+      <img src="http://openweathermap.org/img/wn/<%= data.icon %>@2x.png" alt="<%= data.description %>" class="icon">
+      <p class="description"><%= data.description %> </p>
+    <% } %>
+
+    <% if (error != null) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+  </div>
+</body>
+</html>
