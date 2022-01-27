@@ -53,6 +53,11 @@ Express.js TEMPLATES (PUG, MUSTACHE, EJS) - INSTALLATION:
 * https://www.npmjs.com/package/ejs (EJS)
 <br />
 
+REQUEST (TO FETCH API SERVERSIDE) - INSTALLATION:
+* https://www.npmjs.com/package/request (deprecated! - Not to 100% safe anymore)
+* Alternate is AXIOS: https://axios-http.com/
+<br />
+
 NODEMON - INSTALLATION:
 * https://www.npmjs.com/package/nodemon 
 * (Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected).
@@ -192,6 +197,8 @@ _**[EJS - The Template Engine enables you to use static template files in your a
 | $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
 | $ npm i express  | Install Express (You can also write "install", "i" is shortcut) |
 | $ npm i ejs  | Install EJS (You can also write "install", "i" is shortcut) |
+| $ npm init | Optional AT THE BEGINNING: Setting up the nodemodule with additional information |
+| $ npm i request  | (Deprecated!) Fetch is CLIENT-SIDE, to load APIs on server-side we need packages like this => AXIOS :) |
 
 
 <br />
