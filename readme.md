@@ -191,7 +191,7 @@ _**[EJS - The Template Engine enables you to use static template files in your a
 | $ nodemon (...)  | Using NODEMON to start the serverside workingspace |
 | $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
 | $ npm i express  | Install Express (You can also write "install", "i" is shortcut) |
-| $ npm i ejs  | ... |
+| $ npm i ejs  | Install EJS (You can also write "install", "i" is shortcut) |
 
 
 <br />
