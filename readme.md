@@ -131,10 +131,10 @@ _**GETTING STARTED:**_
 _**OPEN TERMINAL, CHECK THE RIGHT PATH AND EXECUTE THE SERVER:**_
 
 6) Look at the appropriate folder in VSC, for example: "01_node-server" > right click > "Open in integrated terminal"
-7) Path MUST be correct. Please check with: `$ pwd` , which shows the path (pwd = path working directory) <br />
-7.1) If FALSE: `$ ls` (gives information about the path tree), then:<br />
+7) Path MUST be correct*. Please check with: `$ pwd` , which shows the path (pwd = path working directory) * => FAST FORWARD: Open the right path directly in your Terminal with VSC while RIGHT CLICK on the desired folder and click `OPEN IN INTEGRATED TERMINAL` - Over here you can handle it manually: <br />
+7.1) If path is FALSE: `$ ls` (gives information about the path tree), then:<br />
 7.2) `$ cd` and TAB through the path (TIP: manually enter first characters, end with TAB, which is like an AUTOCOMPLETE) > Enter <br />
-7.3) If COMPLETELY WRONG PATH: `$ cd ../bla bla`
+7.3) If path is COMPLETELY WRONG: `$ cd ../bla bla`
 8) `$ node` and name of JS-file, for example "server.js" and execute: `$ node server.js`.
 
 
