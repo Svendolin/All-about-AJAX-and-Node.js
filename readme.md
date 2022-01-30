@@ -120,7 +120,7 @@ What does "SERVERSEITIG" mean here?
 - Node.js has no access to the DOM because there is no client (no document being built)
 - Node.js is Javascript that is executed server-side on the SERVER.
 
-_**GET STARTED:**_
+_**GETTING STARTED:**_
 
 1) Open Bash (Windows) and write in your terminal:
 2) $ node --version
@@ -192,12 +192,12 @@ _**[EJS - The Template Engine enables you to use static template files in your a
 | $ ls | Show Contents of a Directory |
 | $ cd /TAB (TAB as Autocomplete) | Navigate through Content Directory |
 | $ cd ../ | A step back of the Content Directory |
+| $ npm init | Optional AT THE BEGINNING: Setting up the nodemodule with additional information |
 | $ node (...) | Using NODE to start the serverside workingspace |
 | $ nodemon (...)  | Using NODEMON to start the serverside workingspace |
 | $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
 | $ npm i express  | Install Express (You can also write "install", "i" is shortcut) |
 | $ npm i ejs  | Install EJS (You can also write "install", "i" is shortcut) |
-| $ npm init | Optional AT THE BEGINNING: Setting up the nodemodule with additional information |
 | $ npm i request  | (Deprecated!) Fetch is CLIENT-SIDE, to load APIs on server-side we need packages like this => AXIOS :) |
 
 
