@@ -1,0 +1,5 @@
+Ignored the Node Modules (They need to be installed in the terminal anyway personally)
+
+03_Week_Node.js/02_express_server/node_modules
+03_Week_Node.js/03_more_express/node_modules
+03_Week_Node.js/04_nodeWeather/node_modules
