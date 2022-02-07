@@ -199,6 +199,8 @@ _**[EJS - The Template Engine enables you to use static template files in your a
 | $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
 | $ npm i express  | Install Express (You can also write "install", "i" is shortcut) |
 | $ npm i ejs  | Install EJS (You can also write "install", "i" is shortcut) |
+| $ npm i ndeb  | Install NEDB, a lightweight Javascript Database |
+| $ npm i node-fetch@2  | Install Node-Fetch Vers.2, a lightweight module that brings Fetch API to Node.js. |
 | $ npm i request  | (Deprecated!) Fetch is CLIENT-SIDE, to load APIs on server-side we need packages like this => AXIOS :) |
 
 
