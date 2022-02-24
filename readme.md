@@ -104,6 +104,15 @@ to the next.
 * Asynchronous = We have to wait until the process is executed. This varies depending on the content!
 (With Ajax we can work side by side, making requests while processes are happening).
 
+_**What is a FETCH?**_
+
+* With "fetch" you can download a content, a command or an API, which can be executed with .then , async or JQuery
+* EXAMPLES AT: 01_Week_FetchAndAPI
+
+_**What is an API?**_
+
+* API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+* EXAMPLES AT: 01_Week_FetchAndAPI
 
 <br />
 <br />
