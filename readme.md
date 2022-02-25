@@ -114,6 +114,44 @@ _**What is an API?**_
 * API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
 * EXAMPLES AT: 01_Week_FetchAndAPI
 
+_**What is JSON()?**_
+
+* Json is a data structure to be able to read out the content
+
+_**How does it look like to ASYNC a function, FETCH an API and read the content with JSON() ?**_
+
+```js
+/* ---- BASIC EXAMPLE ---- */
+
+async function load() {
+      try { // OPT: mit try{} und catch{} fehler abfangen
+      let response = await fetch('https://catfact.ninja/fact');
+      let result = await response.json();
+      console.log(result.fact);
+      } catch (e) {
+            console.log('A mistake has been occured', e);
+      }
+}
+
+load()
+
+
+/* ---- EXTENDED EXAMPLE ---- */
+<script> // Eingebunden ins HTML
+    // async vor die Funktion setzen, damit sie asynchron läuft:
+    async function displayData() {
+      let response = await fetch('../00_data/data.json'); // await ist equivalent zu .then / .then
+      let data = await response.json();
+
+      console.log(data);
+    }
+
+    // Am Ende nicht vergessen: Funktion ausgeben!
+    displayData()
+</script>
+```
+<br>
+
 <br />
 <br />
 
