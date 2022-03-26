@@ -111,12 +111,13 @@ _**What is a FETCH?**_
 
 _**What is an API?**_
 
-* API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+* API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API (an external Server).
 * EXAMPLES AT: 01_Week_FetchAndAPI
 
 _**What is JSON()?**_
 
-* Json is a data structure to be able to read out the content
+* Json is a data format to be able to read out the content and save the data
+* To load and save the data from the API or save configurations: you are doing that as a JSON-Format!
 
 _**How does it look like to ASYNC a function, FETCH an API and read the content with JSON() ?**_
 
