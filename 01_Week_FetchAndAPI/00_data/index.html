@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-------------------------------------- BASIC HTML5 TAG -------------------------------------->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------------------------------------- META TAG -------------------------------------->
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="Useful Basic Structure for HTML stuff in the head">
+  <meta name="author" content="Svendolin">
+  <title>.json Erklärung</title>
+</head>
+
+<body>
+  <!--
+
+    1) Ein JSON-Datenobjekt stecken wir in {}:
+    {
+      "userId": 1,
+      "id": 6,
+      "titles": ["Hello there!", "High Five!"], // Mehrere passende Eingaben speichern wir in Arrays ab []
+      "completed": false
+    }
+
+    2) Mehrere JSON-Datenobjekte stecken wir in ein [{}]:
+
+    [{
+      "userId": 1,
+      "id": null,  // null = leer, nicht vorhanden.
+      "title": "Person 1",
+      "completed": false
+    },
+    {
+      "userId": 2,
+      "id": 6,
+      "title": "Person 2",
+      "completed": false
+    }
+    ]
+
+    3) Lockeres JSON-im HTML schreiben:
+    Wichtig: 
+      - Nicht mehr .json sondern .html
+      - <script> benutzen, um im JS zu schreiben
+      - JSON-Datenobjekt in einen Behälter stecken = Variable ( let contact1)
+    
+
+  -->
+  <script>
+    let contact1 = {
+      "name" : "Stefan",
+      "alter" : 21,
+      "hobbies" : ["Tennis", "Angeln", "Kreiseln"],
+      "adresse": {
+        "strasse" : "Anisplatz 12",
+        "plz": "4343"
+      }
+
+    };
+    console.log(contact1.hobbies[0]); // Tennis
+  </script>
+
+</body>
+
+</html>
