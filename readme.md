@@ -162,7 +162,14 @@ load()
 
 ## &nbsp;Node.js - Useful Assistance ✅
 ***
-What does "SERVERSEITIG" mean here?
+
+_**WHAT IS NODE.JS?**_
+
+- Node.js is a runtime environment for Javascript (Laufzeitumgebung)
+- Scripts are performed directly via our computer and not only via the web browser
+
+
+_**What does "SERVERSEITIG" mean here?**_
 - We swap the roles. When we work SERVERSEITIG, we are "inside the server".
 - We create and start the server (server.js file) and receive requests.
 - That means WE are now the waiters (server) and not the client. We OPERATE the client!
