@@ -178,7 +178,7 @@ _**What does "SERVERSEITIG" mean here?**_
 
 _**GETTING STARTED:**_
 
-1) Open Bash (Windows) and write in your terminal:
+1) Open Bash (Windows) or CMD and write in your terminal:
 2) $ node --version
 3) Version should be displayed (Successful Installation)
 4) $ npm --version
@@ -200,6 +200,8 @@ _**Why restart the server after EVERY CHANGE?**_
 
 
 _**Why is NODEMON as a SUPERFAST SOLUTION?**_
+
+0) Nodemon is part of the Node Packing Manager (npm) which is also going to be installed after a successful instalation of node...
 1) Nodemon starts the server automatically with every change. (ctrl c is kinda superfluous now)
 2) Write `$ npm install -g nodemon` in your terminal to run NODEMON
 3) At first start do NOT write `$ node` but `$ nodemon (*)` to address Nodemon like: (`$ nodemon 03_ejs_basics.js`)
@@ -244,11 +246,11 @@ _**[EJS - The Template Engine enables you to use static template files in your a
 |:--------------| :--------------|
 | $ node --version | Checks the node.js version (None if you havent installed it) |
 | $ npm --version | Checks the NPM Version (Node Package Manager) |
+| $ npm init | !OPTIONAL AT THE BEGINNING: Setting up the nodemodule with additional information |
 | $ pwd | Print Work Directory (checks your path) |
 | $ ls | Show Contents of a Directory |
 | $ cd /TAB (TAB as Autocomplete) | Navigate through Content Directory |
 | $ cd ../ | A step back of the Content Directory |
-| $ npm init | Optional AT THE BEGINNING: Setting up the nodemodule with additional information |
 | $ node (...) | Using NODE to start the serverside workingspace |
 | $ nodemon (...)  | Using NODEMON to start the serverside workingspace |
 | $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
