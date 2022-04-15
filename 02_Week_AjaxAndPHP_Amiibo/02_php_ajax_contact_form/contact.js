@@ -13,7 +13,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
 async function sendData (fd) {
 
   const response = await fetch('contact_me.php', { method : 'POST' , body : fd})
-  const data = await response.json() //response.text()
+  const data = await response.text() //response.text()
   console.log(data[0]) // fail || Success
 
   if (data[0] == 'fail'){
