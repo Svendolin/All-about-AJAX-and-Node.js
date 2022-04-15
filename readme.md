@@ -249,8 +249,8 @@ _**[EJS - The Template Engine enables you to use static template files in your a
 | $ npm init | !OPTIONAL AT THE BEGINNING: Setting up the nodemodule with additional information |
 | $ pwd | Print Work Directory (checks your path) |
 | $ ls | Show Contents of a Directory |
-| $ cd /TAB (TAB as Autocomplete) | Navigate through Content Directory |
-| $ cd ../ | A step back of the Content Directory |
+| $ cd TAB (TAB as Autocomplete) | Navigate forward through Content Directory |
+| $ cd .. | Navigate backwards of the Content Directory |
 | $ node (...) | Using NODE to start the serverside workingspace |
 | $ nodemon (...)  | Using NODEMON to start the serverside workingspace |
 | $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
