@@ -74,16 +74,26 @@ NODEMON - INSTALLATION:
 
 _**Means:**_
 
-*Asynchronous Request (Fetch = Vanilla, JQuery Ajax = JQuery, etc) and Responses.
-XML = Obsolete, actually works like HTML. Through Json (text version of JS).
+* Asynchronous Request (Fetch = Vanilla, JQuery Ajax = JQuery, etc) and Responses.
+XML = Obsolete, actually works like HTML. Through Json (text version of JS)
 
 _**Used for:**_
 
- * Injecting content from a database / server (localhost e.g.) without refreshing the website every time.
-
+ * Injecting content from a database / server (localhost e.g.) without refreshing the website every time
  * Loading content into a web page from time to time. (Example: chatbots = refresh happens automatically)
+ * Load webpage content when a button is clicked (e.g. "Show more" in a webshop)
 
- * Load webpage content when a button is clicked (e.g. "Show more" in a webshop).
+ _**Advantages:**_
+
+ * Much more confortable for the user (take Youtube for example where we can watch a video and browse at the same time 
+ through the site)
+ * Reduces traffic because only the used data is going to be sent (take Instagram for example to show only the first 8 posts and reload some more if necessary)
+ * Reduces loading time. Images and bigger data aren't necesessary for an instant load
+
+ _**Disadvantages:**_
+
+ * Return Button can cause problems
+ * Ajax is always dependent on Javascript. Keep that in mind
 
 _**Combined with:**_
 
@@ -91,18 +101,14 @@ _**Combined with:**_
 
 _**Each browser has its own JS engine:**_
 
- * Engine: The engine that executes Javascript in the browser, in Chrome e.g. "V8".
+ * Engine: The engine that executes Javascript in the browser, in Chrome e.g. "V8"
 
 _**AJAX IS: Stack Functionable / Single threaded / Never blocking / Asynchronous:**_
- * Each function is stacked (stacked) step by step = Javascript goes step by step through them all from the first function to the next.
-to the next. 
-
+ * Each function is stacked (stacked) step by step = Javascript goes step by step through them all from the first function to the next 
 * JS is single threaded = There is only one stack
-
 * Never-Blocking = It is constantly looped through step by step
-
-* Asynchronous = We have to wait until the process is executed. This varies depending on the content!
-(With Ajax we can work side by side, making requests while processes are happening).
+* Asynchronous = We have to wait until the process is executed. This varies depending on the content
+(With Ajax we can work side by side, making requests while processes are happening)
 
 _**What is a FETCH?**_
 
@@ -111,7 +117,7 @@ _**What is a FETCH?**_
 
 _**What is an API?**_
 
-* API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API (an external Server).
+* API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API (an external Server)
 * EXAMPLES AT: 01_Week_FetchAndAPI
 
 _**What is JSON()?**_
@@ -119,7 +125,7 @@ _**What is JSON()?**_
 * Json is a data format to be able to read out the content and save the data
 * To load and save the data from the API or save configurations: you are doing that as a JSON-Format!
 
-_**How does it look like to ASYNC a function, FETCH an API and read the content with JSON() ?**_
+_**How does it look like to ASYNC a function, FETCH an API and read the content with JSON() IN YOUR BROWSER'S CONSOLE ?**_
 
 ```js
 /* ---- BASIC EXAMPLE ---- */
@@ -152,6 +158,12 @@ load()
 </script>
 ```
 <br>
+
+_**How does it look like to ASYNC a function, FETCH an API and read the content with JSON() IN YOUR WEBSITE ?**_
+
+```js
+
+```
 
 <br />
 <br />
