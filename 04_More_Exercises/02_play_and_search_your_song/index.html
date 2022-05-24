@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iTunes</title>
+</head>
+<body>
+  <div class="container"> 
+    <input type="text" class="artist">
+    <input type="text" class="song">
+    <button class="search">foo</button>
+  </div>
+  <div class="preview">
+    <audio src=""></audio>
+  </div>
+
+
+  <script>
+
+  document.querySelector('.search').addEventListener('click', e => {
+
+    const artist = document.querySelector('.artist').value.replace(/ /g, "+")
+    const song = document.querySelector('.song').value.replace(/ /g, "+")
+
+    try{
+      getData(artist, song)
+    }catch(e){
+      console.log(e)
+    }
+  })
+
+  
+  async function getData (artist, song){
+    const response = await fetch(`https://itunes.apple.com/search?term=${artist}+${song}&music=musicTrack&media=music`)
+    const data = await response.json()
+    console.log(data)
+
+    const foo = data.results.filter(item => item.kind == 'song')
+    console.log(foo)
+
+    document.querySelector('.preview').innerHTML = `
+      <audio controls>
+        <source src="${foo[0].previewUrl}" type="audio/x-m4a">
+      </audio>`  
+
+  }
+
+  </script>
+</body>
+</html>

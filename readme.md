@@ -24,10 +24,11 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| Week&nbsp;01 |  XML HTTP Request (_01 , 02_) // FETCH with: `.then` or `ASYNC` or `JQUERY` (_03 , 04 , 05_)  // API FETCH with: `ASYNC` or `JQUERY` (_06 , 07 , 08_)  |
-| Week&nbsp;02 | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) |
-| Week&nbsp;03 | Node.js => `Node Server`, `Express Server` (_01 , 02_) // More Express with `ROUTING` (_03-01_),  `MIDDLEWARE` (_03-02_), `EJS`-Template Engine + `Nodemon` (_03-03_), WeatherAPI (_04_) |
-| Week&nbsp;04 |  |
+| 01&nbsp;Week |  XML HTTP Request (_01 , 02_) // FETCH with: `.then` or `ASYNC` or `JQUERY` (_03 , 04 , 05_)  // API FETCH with: `ASYNC` or `JQUERY` (_06 , 07 , 08_)  |
+| 02&nbsp;Week | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) |
+| 03&nbsp;Week | Node.js => `Node Server`, `Express Server` (_01 , 02_) // More Express with `ROUTING` (_03-01_),  `MIDDLEWARE` (_03-02_), `EJS`-Template Engine + `Nodemon` (_03-03_), WeatherAPI (_04_) |
+| 04&nbsp;Exercises | Projects = Random Joke API (_01_) // Search and Play your Song ITUNES-API (_02_)  |
+| 05&nbsp;MoreAjaxWithYT| xxx   |
 
 <br />
 <br />

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load Content with Ajax</title>
+  <style>
+    .test {
+      color: green;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    // Load scripts always AFTER the website has loaded
+    $(document).ready(function(){
+      // btn Click Event:
+      $("#btn").click(function(){
+        // JQUERY CODE contains three parameters: (1)               (2)                   (3)
+        $("#test").load("data.txt", {   // .load(FILE, {DATA to pass data if you want}, CALLBACK ) = Ajax
+          Name: "Daniel", 
+          Lastname: "Düsentrieb"
+        }, function() {
+            alert("Hi there!")
+        }); 
+      });
+      
+    });
+  </script>
+</head>
+<body>
+
+  <div id="test">
+    <p>This is the first content! :D</p>
+  </div>
+
+  <button id="btn">Click to change to use Ajax</button>
+  
+</body>
+</html>
