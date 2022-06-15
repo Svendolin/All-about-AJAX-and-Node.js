@@ -3,26 +3,26 @@
 <?php
 session_start();
 
-// includes
+// includes (configuration to server)
 require_once('config.php');
-// class
+// class (extende PDO class)
 require_once('class/login.class.php');
 
 // neue login instanz vorbereiten + db verbindung 
 $instanz = new UserLogin($host, $user, $passwd, $dbname);
 
-// wenn gesendet
+// Wichtig: wenn gesendet...
 if (isset($_POST['submit'])) {
 
-  // eingaben clean
+  // Eingaben clean (trim() und strip_tags() als Vorsichtsmassname
   $username = trim(strip_tags($_POST['username']));
   $password = trim(strip_tags($_POST['password']));
 
-  // check required fields
+  // Check required fields
   if (empty($username) || empty($password)) {
     $userFeedback = 'Bitte fülle alle Felder aus.';
   } else {
-    // check user data
+    // Check user data
     $userFeedback = $instanz->checkUser($username, $password);
   }
 } else {
@@ -41,12 +41,13 @@ if (isset($_POST['submit'])) {
 
 <body>
   <div class="login-wrapper">
-    <!-- Displa Usermessages -->
+    <!-- Display Usermessages -->
     <div class="user-msg">
       <p><?php echo $userFeedback ?></p>
     </div>
     <form class="login-form" method="post">
       <h2>Log in to the system</h2>
+      <h3>PHP-Files: Please copy the whole folder to htdocs of your XAMPP / MAMP for display</h3>
       <label for="username">Username</label>
       <input id="username" type="text" name="username" value="">
       <label for="password">Password</label>

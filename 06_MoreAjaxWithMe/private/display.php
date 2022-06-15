@@ -45,7 +45,7 @@ if (isset($_SESSION['loginstate']) && $_SESSION['loginstate'] == "eingeloggt") {
     </table>
     <a href="../logout.php" class="logout">Logout</a>
   </div>
-
+  <!----------------- Time for the IMPORTANT part ----------------->
   <script>
     // JS to get and display data
     async function getdata(userType) {
@@ -78,17 +78,7 @@ if (isset($_SESSION['loginstate']) && $_SESSION['loginstate'] == "eingeloggt") {
           .querySelector(".table-body")
           .insertAdjacentHTML("afterbegin", userObj);
       })
-
-
-
     }
-
-
-
-
-
-
-
 
     document.querySelector('.student').addEventListener('click', () => {
       getdata('student')
