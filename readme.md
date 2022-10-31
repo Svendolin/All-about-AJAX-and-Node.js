@@ -24,10 +24,10 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| 01&nbsp;Week |  XML HTTP Request (_01 , 02_) // FETCH with: `.then` or `ASYNC` or `JQUERY` (_03 , 04 , 05_)  // API FETCH with: `ASYNC` or `JQUERY` (_06 , 07 , 08_)  |
-| 02&nbsp;Week | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) |
-| 03&nbsp;Week | Node.js => `Node Server`, `Express Server` (_01 , 02_) // More Express with `ROUTING` (_03-01_),  `MIDDLEWARE` (_03-02_), `EJS`-Template Engine + `Nodemon` (_03-03_), WeatherAPI (_04_) |
-| 04&nbsp;Exercises | Projects = Random Joke API (_01_) // Search and Play your Song ITUNES-API (_02_)  |
+| 01_Fetch Async Await |  XML HTTP Request (_01 , 02_) // FETCH with: `.then` or `ASYNC` or `JQUERY` (_03 , 04 , 05_)  // API FETCH with: `ASYNC` or `JQUERY` (_06 , 07 , 08_)  |
+| 02_Ajax and PHP | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) // MOVIE API (_05_) |
+| 03_Node.js | Node.js => `Node Server`, `Express Server` (_01 , 02_) // More Express with `ROUTING` (_03-01_),  `MIDDLEWARE` (_03-02_), `EJS`-Template Engine + `Nodemon` (_03-03_), WeatherAPI (_04_) |
+| 04_Projects | Random Joke API (_01_) // Search and Play your Song ITUNES-API (_02_)  |
 | 05&nbsp;MoreAjaxWithYT| xxx   |
 
 <br />
@@ -63,6 +63,13 @@ REQUEST (TO FETCH API SERVERSIDE) - INSTALLATION:
 NODEMON - INSTALLATION:
 * https://www.npmjs.com/package/nodemon 
 * (Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected).
+
+FOR PHP Projects (using XAMPP / MAMP or WAMP):
+
+* https://github.com/Svendolin/All-about-PHP
+<br />
+
+
 <br />
 <br />
 
