@@ -8,10 +8,12 @@
 </head>
 <body>
   <div class="container"> 
-    <input type="text" class="artist">
-    <input type="text" class="song">
-    <button class="search">foo</button>
+    <input placeholder="Artist" type="text" class="artist">
+    <input placeholder="Song" type="text" class="song">
+    <button class="search">Search</button>
   </div>
+
+  <!-- An audio control will appear after clicking the search button -->
   <div class="preview">
     <audio src=""></audio>
   </div>
@@ -40,6 +42,7 @@
     const foo = data.results.filter(item => item.kind == 'song')
     console.log(foo)
 
+    /* This will appear in the preview-Section */
     document.querySelector('.preview').innerHTML = `
       <audio controls>
         <source src="${foo[0].previewUrl}" type="audio/x-m4a">
