@@ -4,9 +4,11 @@
 ***
 <img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/ajax/ajax.png" /> 
 
+<img align="left" alt="API" width="35px" src="https://media.licdn.com/dms/image/C5112AQF49DOfOhCFSA/article-cover_image-shrink_720_1280/0/1579816811751?e=2147483647&v=beta&t=e47GGJDzoqsm4dl3qV2EjVWrxyMzIwsPmEE9Gywo83w" /> 
+
 <img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
 
-# &nbsp;- ALL ABOUT AJAX and Node.js - ✔
+# &nbsp;- ALL ABOUT AJAX, APIs and Node.js - ✔
 
 This "All about AJAX and Node.js"-repository catches up its focus on all the AJAX and Node.js processes I've made, commented and written through the years as a **SAE-Web Development** student with exercise lessons every week as well as tutorial videos on _Youtube_.
         
@@ -28,7 +30,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 | 02_Ajax and PHP | PHP AJAX SIMPLE (_01_) // CONTACT FORM and LOGIN (_02 , 03_) // Amiibo API (_04_) // MOVIE API (_05_) |
 | 03_Node.js | Node.js => `Node Server`, `Express Server` (_01 , 02_) // More Express with `ROUTING` (_03-01_),  `MIDDLEWARE` (_03-02_), `EJS`-Template Engine + `Nodemon` (_03-03_), WeatherAPI (_04_) |
 | 04_Projects | Random Joke API (_01_) // Search and Play your Song ITUNES-API (_02_)  |
-| 05&nbsp;MoreAjaxWithYT| xxx   |
+| 05&nbsp;MoreAjaxWithYT| xxx - STAY TUNED!   |
 
 <br />
 <br />
@@ -69,6 +71,27 @@ FOR PHP Projects (using XAMPP / MAMP or WAMP):
 * https://github.com/Svendolin/All-about-PHP
 <br />
 
+
+<br />
+<br />
+
+***
+<img align="left" alt="API" width="35px" src="https://media.licdn.com/dms/image/C5112AQF49DOfOhCFSA/article-cover_image-shrink_720_1280/0/1579816811751?e=2147483647&v=beta&t=e47GGJDzoqsm4dl3qV2EjVWrxyMzIwsPmEE9Gywo83w" /> 
+
+## &nbsp;API - Useful Assistance ✅
+***
+``API`` = Application Programming Interface 
+
+=> API-VAULT: A Databselist where you get the largest collection of free APIs categorized for easy search! [CLICK HERE](https://apivault.dev/)
+
+_**What is an API?**_
+
+* API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API (an external Server)
+* EXAMPLES AT: 01_Week_FetchAndAPI
+
+_**How does an API interact?**_
+
+* APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols. For example, the weather bureau's software system contains daily weather data. The weather app on your phone “talks” to this system via APIs and shows you daily weather updates on your phone.
 
 <br />
 <br />
@@ -121,11 +144,6 @@ _**AJAX IS: Stack Functionable / Single threaded / Never blocking / Asynchronous
 _**What is a FETCH?**_
 
 * With "fetch" you can download a content, a command or an API, which can be executed with .then , async or JQuery
-* EXAMPLES AT: 01_Week_FetchAndAPI
-
-_**What is an API?**_
-
-* API is the acronym for Application Programming Interface ("Programmierschnittstelle"), which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API (an external Server)
 * EXAMPLES AT: 01_Week_FetchAndAPI
 
 _**What is JSON()?**_
